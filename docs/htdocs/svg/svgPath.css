@@ -1,0 +1,7 @@
+path{
+    stroke: #333; fill:none; stroke-width: 2;
+}
+
+#author path{
+    stroke: #555; fill:none; stroke-width: 1;
+}

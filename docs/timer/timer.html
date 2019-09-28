@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>重力模拟</title>
+
+    <!--导航-->
+    <link rel="stylesheet" href="../css/nav.css">
+    <script src="../util/jquery-1.12.0.min.js"></script>
+    <script src="../js/nav.js"></script>
+</head>
+
+<body>
+<!--PC端导航-->
+<nav>
+    <ul id="nav">
+        <a>
+            <li>
+                算法可视化
+                <ul class="secondNavUl">
+                    <a href="../Algorithm/selectSort/selectSort.html"><li>选择排序</li></a>
+                    <a href="../Algorithm/insertSort/insertSort.html"><li>插入排序</li></a>
+                    <a href="../Algorithm/mergeSort/mergeSort.html"><li>归并排序</li></a>
+                </ul>
+            </li>
+        </a>
+        <a href="../svg/svg.html"><li>svg路径动画</li></a>
+        <a href="../calendar/calendar.html"><li>滑动翻页日历</li></a>
+        <a class="active"><li>重力模拟</li></a>
+    </ul>
+</nav>
+
+<!--三条杠导航-->
+<div id="mobileNavBtn">
+    <div class="whiteMobileMenuBar"></div>
+    <div class="whiteMobileMenuBar"></div>
+    <div class="whiteMobileMenuBar"></div>
+</div>
+
+<!--移动端全屏导航-->
+<div id="mobileNavBac">
+    <div id="mobileNavHeadBar">
+        <div id="closeMobileNavBtn"><!--关闭按钮-->
+            <div class="whiteCloseMobileMenuBar"></div>
+            <div class="whiteCloseMobileMenuBar"></div>
+        </div>
+    </div>
+    <ul id="mobileNav">
+        <a href="../Algorithm/selectSort/selectSort.html"><li>选择排序</li></a>
+        <a href="../Algorithm/insertSort/insertSort.html"><li>插入排序</li></a>
+        <a href="../Algorithm/mergeSort/mergeSort.html"><li>归并排序</li></a>
+        <a href="../svg/svg.html"><li>svg路径动画</li></a>
+        <a href="../calendar/calendar.html"><li>滑动翻页日历</li></a>
+        <a class="active"><li>重力模拟</li></a>
+    </ul>
+</div>
+
+
+<!--时间动画-->
+<div id="content">
+    <canvas id="canvas" style="width:100%; height: 99%;">
+        当前浏览器不支持Canvas，请更换浏览器后再试
+    </canvas>
+</div>
+</body>
+
+<script src="digit.js"></script>
+<script src="timer.js"></script>
+</html>

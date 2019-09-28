@@ -1,0 +1,104 @@
+#pageGroup{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: -webkit-transform 0.8s ease-in-out;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+}
+
+
+
+.op{
+    position: absolute;
+    left:50%;
+    margin-left: -13px;
+    z-index: 999;
+    animation-duration: 1.35s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /*永久*/
+    animation-direction: normal;
+    animation-play-state: running;
+
+    -webkit-animation-duration: 1.35s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite; /*永久*/
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+}
+#next{
+    bottom: 0;
+    animation-name: down2up;
+    -webkit-animation-name: down2up;
+}
+#prev{
+    top: 0;
+    display: none;
+    animation-name: up2down;
+    -webkit-animation-name: up2down;
+}
+.arrows{
+    width: 26px;
+    /*-webkit-transition: all 1s ease; //ease缓慢开始缓慢结束、linear匀速*/
+}
+
+/*.bigArrows{*/
+    /*width: 28px !important;*/
+/*}*/
+
+/*关键帧*/
+@keyframes up2down {
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(8px);
+        -webkit-transform: translateY(8px);
+    }
+}
+@keyframes down2up {
+    0%{
+        opacity: 1;
+        transform: translateY(11px);
+        -webkit-transform: translateY(11px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+}
+
+
+#beian{
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 96%;
+    height: 32px;
+    line-height: 32px;
+    border-top: solid 1px lightgrey;
+}
+
+
+@media screen and (max-width: 420px){
+    .arrows{
+        width: 22px;
+    }
+    .op{
+        margin-left: -11px;
+    }
+
+    #beian{
+        display: none;
+    }
+}
